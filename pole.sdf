@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+
+<sdf version='1.6'>
+  <model name='pole'>
+    <link name="upper_arm">
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>0.005</mass>
+        <inertia>
+          <ixx>0.000416791666667</ixx>
+          <iyy>0.000416791666667</iyy>
+          <izz>0.0000025</izz>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyz>0</iyz>
+        </inertia>
+      </inertial>
+      <collision name="sphere_collision">
+        <geometry>
+         <cylinder>
+         <length>1</length>
+         <radius>0.01</radius>
+         </cylinder>
+        </geometry>
+      </collision>
+      <visual name="upper_arm">
+        <geometry>
+        <cylinder>
+         <length>1</length>
+         <radius>0.01</radius>
+         </cylinder>
+        </geometry>
+        <material><diffuse>0 0 0 1</diffuse></material>
+      </visual>
+      
+    </link>
+  </model>
+</sdf>
